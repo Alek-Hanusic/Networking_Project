@@ -1,6 +1,7 @@
 import sys
 import http.client
 
+
 def parse_headers(headers):
     parsed_headers = {}
     for header, value in headers:
@@ -9,7 +10,6 @@ def parse_headers(headers):
         except ValueError:
             print(f"Invalid header format: {header}")
     return parsed_headers
-
 
 
 ##For the parse_headers function we tried for parses to be the response headers and show that it converts them into
